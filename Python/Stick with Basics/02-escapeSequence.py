@@ -19,3 +19,11 @@ print('Printing...', 1, 2, sep='_', end='YYY')
 print('Print', 5, 6, sep='~', end='XXX\n')
 
 print('Escape Character')
+
+# Output:
+# This is a print statement and
+# you are reading this statement
+# This is a
+# print statement and     you are reading this statement
+# Printing..._1_2YYYPrint~5~6XXX
+# Escape Character
