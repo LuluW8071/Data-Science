@@ -1,4 +1,4 @@
-# 
+# Strings are like a sequence of characters called an array
 language1 = 'Python'
 language2 = "Ruby"
 language3 = 'JavaScript'
