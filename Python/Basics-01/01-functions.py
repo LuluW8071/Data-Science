@@ -10,7 +10,7 @@ def calc_geometricMean(a, b):
 def check(a, b):
     if a > b:
         print(a, '>', b)
-    elif c < d:
+    elif a < b:
         print(a, '<', b)
     else:
         print(a, '=', b)
