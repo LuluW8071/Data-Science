@@ -1,11 +1,9 @@
 # A block of code that executes a certain tasks when called is a function
 '''User Defined Function'''
 
-
 def calc_geometricMean(a, b):
     gm = (a*b)/(a+b)
     return gm
-
 
 def check(a, b):
     if a > b:
@@ -14,7 +12,6 @@ def check(a, b):
         print(a, '<', b)
     else:
         print(a, '=', b)
-
 
 def func_later(a, b):
     # This function is a placeholder and its behavior will be implemented later
