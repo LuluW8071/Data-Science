@@ -6,8 +6,10 @@ def average(*numbers):
         sum = sum + i
     return sum / len(numbers)
 
-a = average(10,20,30,40)
+
+a = average(10, 20, 30, 40)
 print(a)
+
 
 def average1(*numbers):
     print(type(numbers))
@@ -18,8 +20,9 @@ def average1(*numbers):
     return 1000
     return avg1
 
+
 # Always returns statement that comes first
-a1 = average1(10,20,30,40)
+a1 = average1(10, 20, 30, 40)
 print(a1)
 
 # Output:
