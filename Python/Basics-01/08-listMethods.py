@@ -16,11 +16,11 @@ x.extend(lst)
 print(x)
 
 # concatenates the list
-print(x + lst)
+print(y + lst)
 
 # Output:
 # [13, 90, 87, 63, 37, 60]
 # [0, 90, 87, 63, 37, 60]
 # [13, 90, 87, 100, 63, 37, 60]
 # [13, 90, 87, 100, 63, 37, 60, 'red', 'green', 'blue', 'yellow']
-# [13, 90, 87, 100, 63, 37, 60, 'red', 'green', 'blue', 'yellow', 'red', 'green', 'blue', 'yellow']
+# [0, 90, 87, 63, 37, 60, 'red', 'green', 'blue', 'yellow']
