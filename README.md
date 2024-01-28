@@ -17,11 +17,11 @@
 ## PyTorch for Deep Learning 
 Before diving into the PyTorch deep learning course, ensure you have a basic understanding of:
 
-**[Python Basics](https://www.w3schools.com/python/python_intro.asp):**
+**[Python Basics:](https://www.w3schools.com/python/python_intro.asp)**
 - Familiarity with _syntax_, _data types_, _control structures_, _loops_, _functions_, and _class_.
 - Consider introductory **Python tutorials** if you're new.
 
-**[Machine Learning Fundamentals](https://www.w3schools.com/python/python_ml_getting_started.asp):**
+**[Machine Learning Fundamentals:](https://www.w3schools.com/python/python_ml_getting_started.asp)**
 - Understand concepts like _supervised learning_, _classification_, and _evaluation metrics_.
 - Familiarity with common ML libraries like [scikit-learn](https://scikit-learn.org/stable/tutorial/index.html) is beneficial.
 
