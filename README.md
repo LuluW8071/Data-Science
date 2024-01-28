@@ -29,7 +29,7 @@ Before diving into the PyTorch deep learning course, ensure you have a basic und
 - [00 - PyTorch Fundamentals](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/00_Pytorch_Fundamentals)
 - [01 - PyTorch Workflow](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/01_Pytorch_Workflow)
 - [02 - PyTorch Neural Network Classification](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/02_PyTorch_Neural_Network_Classification)
-- [03 -_PyTorch_Computer_Vision](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/03_PyTorch_Computer_Vision)
+- [03 - PyTorch_Computer_Vision](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/03_PyTorch_Computer_Vision)
 ---
 ## Refrences : [Zero to Mastery Learn PyTorch for Deep Learning](https://www.learnpytorch.io/)
 ---
