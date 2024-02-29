@@ -1,7 +1,7 @@
 import os 
 import torch 
-# import data_setup
-import engine, model
+import data_setup
+import dataset, engine, model
 import utils
 
 from torchvision import transforms
@@ -21,28 +21,28 @@ test_dir = "dataset/test"
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Create transformation for image
-data_transform = tranforms.Compose([
+data_transform = transforms.Compose([
     transforms.Resize((128, 128)),
     transforms.TrivialAugmentWide(num_magnitude_bins=21),
     transforms.ToTensor()
 ])
 
 # Create DataLoaders through data_setup.py
-train_dataloader, test_dataloader, class_names = data_setup.create_dataloaders(
+train_dataloader, test_dataloader, class_names = dataset.create_dataloaders(
     train_dir, test_dir, data_transform, BATCH_SIZE, NUM_WORKERS
 )
 
 # Create Model through model.py
 model = model.TinyVGGModel(input_shape=3,
                            hidden_units=64,
-                           output_shape=8)
+                           output_shape=len(class_names)).to(device)
 
 # img_sample = torch.rand(1, 3, 128, 128)
 # print(model(img_sample.to(device)))
 
 # Setup loss_fn and optimizer
 loss_fn = torch.nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters,
+optimizer = torch.optim.Adam(model.parameters(),
                              lr=LEARNING_RATE)
 
 # Start the training through engine.py

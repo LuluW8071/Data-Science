@@ -3,10 +3,7 @@ import os
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader 
 
-# Core counts in CPU
-NUM_WORKERS = os.cpu_count()
-
-def create_dataloaders(train_dir: str, test_dir: str, transform, batch_size: int, num_workers: int):
+def create_dataloaders(train_dir, test_dir, transform, batch_size, num_workers):
     """
     Creates train and test dataloaders.
 

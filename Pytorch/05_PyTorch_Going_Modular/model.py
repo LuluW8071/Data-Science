@@ -49,14 +49,12 @@ class TinyVGGModel(nn.Module):
         )
 
     def forward(self, x):
-        # x = self.conv_block_1(x)
-        # x = self.conv_block_2(x)
-        # x = self.conv_block_3(x)
-        # # print(x.shape)
-        # x = self.conv_block_4(x)
-        # # print(x.shape)
-        # x = self.classifier(x)
-        # return x 
+        x = self.conv_block_1(x)
+        x = self.conv_block_2(x)
+        x = self.conv_block_3(x)
+        # print(x.shape)
+        x = self.conv_block_4(x)
+        # print(x.shape)
+        x = self.classifier(x)
+        return x 
 
-        """Leverage the benefits of operator fusion"""
-        return self.classifier(self.conv_block_4(self.conv_block_3(self.conv_block_2(self.conv_block_1(x)))))

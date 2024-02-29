@@ -36,7 +36,7 @@ def train_step(model, dataloader, loss_fn, optimizer, device):
 
         # Calculate and ammulate accuracy metrics across all batches 
         y_pred_class = torch.argmax(torch.softmax(y_pred,
-                                                dim=1))
+                                                dim=1), dim=1)
         train_acc += (y_pred_class == y).sum().item()/len(y_pred)
     
     # Adjust metrics to get avg. loss and accuracy per batch 
@@ -66,7 +66,7 @@ def test_step(model, dataloader, loss_fn, device):
     test_loss, test_acc = 0, 0
 
     # Turn on inference context manager
-    with torch.inference_mode:
+    with torch.inference_mode():
         # Loop through dataloader data batches
         for batch, (X, y) in enumerate(dataloader):
             X, y = X.to(device), y.to(device)       # Send data to target device
@@ -123,7 +123,7 @@ def train(model, train_dataloader, test_dataloader,
                                         device)
 
         # Print out metrics
-        print(f"Epoch: {epoch+1} | train_loss: {train_loss:.4f} -- train_acc: {train_acc:.4f} -- test_loss: {test_loss:.4f} -- test_acc: {test_acc:.4f}")
+        print(f"\nEpoch: {epoch+1} | Train loss: {train_loss:.4f} - Train acc: {(train_acc*100):.2f}% -- Test_loss: {test_loss:.4f} -- Test_acc: {(test_acc*100):.2f}%")
 
         # Update results dictionary
         results["train_loss"].append(train_loss)
