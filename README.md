@@ -1,7 +1,6 @@
 # Data-Science
 
 ## Dependencies
-
 - [Python3.10](https://www.python.org/downloads/release/python-3100/)
 - [PyTorch](https://pytorch.org/)
     
@@ -31,6 +30,8 @@ Before diving into the PyTorch deep learning course, ensure you have a basic und
 - [02 - PyTorch Neural Network Classification](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/02_PyTorch_Neural_Network_Classification)
 - [03 - PyTorch Computer Vision](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/03_PyTorch_Computer_Vision)
 - [04 - PyTorch Custom Datasets](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/04_PyTorch_Custom_Datasets)
+- [05 - PyTorch Going Modular](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/05_PyTorch_Going_Modular/going_modular)
+
 ---
 ## Refrences : [Zero to Mastery Learn PyTorch for Deep Learning](https://www.learnpytorch.io/)
 ---
