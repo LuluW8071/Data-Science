@@ -3,3 +3,4 @@ env/
 
 # Datasets
 dataset/
+__pycache__
