@@ -2,7 +2,7 @@
 
 import cv2 as cv
 
-# Create a function to resize the image
+# Create a function to resize the iamges and frame
 def rescaleFrame(frame, scale = 0.75):
     """
     Resize the input frame.
@@ -23,13 +23,15 @@ def rescaleFrame(frame, scale = 0.75):
     return cv.resize(frame, dimensions, interpolation = cv.INTER_AREA)
 
 # =============================================
-# Read the image and video file
+# Read the image and video file/live_video
 img = cv.imread("../../assets/Photos/cat_large.jpg")
 capture = cv.VideoCapture("../../assets/Videos/dog.mp4")
+# capture = cv.VideoCapture(0)              # Live WebCam Vid
 # =============================================
 
 # Display the original image
 # cv.imshow("Cat", img)
+
 # Display the resized image
 cv.imshow("Cat", rescaleFrame(img, scale = 0.25))
 
@@ -40,9 +42,18 @@ while True:
     
     # Resize the frame
     frame_resized = rescaleFrame(frame)
+    
+    # Display the resized frame
+    # cv.imshow("Video_Resized", frame_resized)
+    cv.imshow("Live_Video_Resized", frame_resized)
+    
+    # Check for the key pressed, if 'd' is pressed, break out of the loop
+    if cv.waitKey(20) & 0xFF==ord('d'):
+        break
 
     # Display the resized frame
-    cv.imshow("Video_Resized", frame_resized)
+    # cv.imshow("Video_Resized", frame_resized)
+    cv.imshow("Live_Video_Resized", frame_resized)
     
     # Check for the key pressed, if 'd' is pressed, break out of the loop
     if cv.waitKey(20) & 0xFF==ord('d'):
