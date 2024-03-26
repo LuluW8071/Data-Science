@@ -42,7 +42,7 @@ In addition to the basics, we cover more advanced topics such as switching betwe
 
 ## Building a Deep Computer Vision Model
 
-Finally, after mastering the basic concepts and delving into advanced topics, we culminate our journey by demonstrating the construction of a deep computer vision model. In this final video, we guide you through the process of building a sophisticated model capable of classifying characters from The Simpsons based on images.
+Finally, after mastering the basic concepts and delving into advanced topics, we culminate our journey by demonstrating the construction of a deep computer vision model capable of classifying characters from The Simpsons based on images.
 
 ## Material Availability
 
