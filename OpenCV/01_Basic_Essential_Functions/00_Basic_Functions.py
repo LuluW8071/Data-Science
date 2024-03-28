@@ -19,6 +19,12 @@ blur = cv.GaussianBlur(img,
 cv.imshow("Blurred_park", blur)
 
 # 3. Edge Detection using Canny edge detector
+# NOTE:
+# The first threshold is the minimum gradient intensity for a pixel to be considered an edge.
+# Pixels with gradients below this value are ignored.
+
+# The second threshold is the maximum gradient intensity to be instantly accepted as an edge.
+# Pixels with gradients above this value are immediately considered edges.
 canny = cv.Canny(img, 125, 175)         # Applying Canny edge detection on the original image
 blur_canny = cv.Canny(blur, 125, 175)   # Applying Canny edge detection on the blurred image
 cv.imshow("Canny_park", canny)
