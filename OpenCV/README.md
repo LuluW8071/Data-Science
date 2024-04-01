@@ -16,11 +16,11 @@ py --version
 If you haven't installed OpenCV and Caer yet, you can do so using pip:
 
 ```bash
-pip install opencv-contrib-python
-pip install caer
+pip install opencv-contrib-python caer
+pip install matplotlib
 ```
 
-## Basic Concepts Covered
+## Concepts Covered
 
 Here's the provided list of basic concepts covered in a markdown table format:
 
@@ -35,10 +35,6 @@ Here's the provided list of basic concepts covered in a markdown table format:
 | Edge Detection                    | Explore various edge detection techniques to identify edges in images.                                        |
 | Thresholding                      | Learn about thresholding techniques to separate objects from the background.                                  |
 | Face Detection and Recognition    | Discover how to detect and recognize faces in images using OpenCV.                                            |
-
-## Advanced Topics
-
-In addition to the basics, we cover more advanced topics such as switching between color spaces, masking, histograms, edge detection, thresholding, and face detection/recognition. These concepts are essential for building complex computer vision applications.
 
 ## Building a Deep Computer Vision Model
 
