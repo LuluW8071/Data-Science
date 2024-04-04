@@ -22,8 +22,6 @@ pip install matplotlib
 
 ## Concepts Covered
 
-Here's the provided list of basic concepts covered in a markdown table format:
-
 | Concept                            | Description                                                                                                 |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Reading Images and Videos         | Learn how to read and display images and videos using OpenCV.                                                |
