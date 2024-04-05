@@ -94,8 +94,9 @@ for epoch in tqdm(range(num_epochs)):
 
     train_loss /= len(train_dataloader)
 
-    # Validation
+    # Validation and Test
     val_loss, val_acc = 0, 0
+    test_loss, test_acc = 0, 0
     model.eval()
     # Validation loop
     with torch.inference_mode():
@@ -104,29 +105,24 @@ for epoch in tqdm(range(num_epochs)):
             X_val = X_val.reshape(X_val.shape[0], -1)
             val_pred = model(X_val)
             val_loss += loss_fn(val_pred, y_val)
-            val_acc += accuracy(y_val, val_pred.argmax(dim=1)) * \
-                100      # Calculate accuracy
+            val_acc += accuracy(y_val, val_pred.argmax(dim=1)) * 100      # Calculate accuracy
 
         val_loss /= len(val_dataloader)
         val_acc /= len(val_dataloader)
 
-    # Test
-    test_loss, test_acc = 0, 0
-    model.eval()
     # Testing loop
-    with torch.inference_mode():
         for batch, (X_test, y_test) in enumerate(test_dataloader):
             X_test, y_test = X_test.to(device), y_test.to(device)
             X_test = X_test.reshape(X_test.shape[0], -1)
             test_pred = model(X_test)
             test_loss += loss_fn(test_pred, y_test)
-            test_acc += accuracy(y_test, test_pred.argmax(dim=1))*100
+            test_acc += accuracy(y_test, test_pred.argmax(dim=1)) * 100
 
         test_loss /= len(test_dataloader)
         test_acc /= len(test_dataloader)
 
     # Print results
-    print(f'Train loss: {train_loss:.4f} | Validation loss: {val_loss:.4f} --- Validation acc: {val_acc:.2f}% | Test loss: {test_loss:.4f} --- Test acc: {test_acc:.2f}%')
+    print(f'\nTrain loss: {train_loss:.4f} | Validation loss: {val_loss:.4f} --- Validation acc: {val_acc:.2f}% | Test loss: {test_loss:.4f} --- Test acc: {test_acc:.2f}%')
 
 
 # DEMO RESULTS:
