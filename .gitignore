@@ -4,6 +4,4 @@ env/
 # Datasets
 dataset/
 __pycache__
-
-# PyTorch Lighting
 datasets
