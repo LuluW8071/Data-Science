@@ -8,13 +8,8 @@ PyTorch Lightning is a powerful deep learning framework designed for professiona
 
 <img src="https://opendatascience.com/wp-content/uploads/2021/02/l10.gif">
 
-- PyTorch Lightning simplifies your PyTorch code by structuring the boilerplate, making it more organized and less arbitrary.
-- It handles the boilerplate for every loop of the machine learning model training process, ensuring consistency and clarity.
-- Your code becomes cleaner, easier to read, and simpler to debug as unnecessary complexity is abstracted away.
-- The streamlined code speeds up the development process and facilitates iteration from one AI model to another.
-- Switching from PyTorch to PyTorch Lightning involves adjusting to simplified, structured code lines throughout your project.
-- PyTorch Lightning offers a suite of free features including progress bars and checkpointing, enhancing simplicity and efficiency.
-- Ultimately, PyTorch Lightning is chosen for its simplicity, making it the framework of choice for many in the deep learning community.
+<img src="../assets/Lightning_Features.jpeg">
+
 
 
 ## Getting Started
@@ -41,13 +36,19 @@ conda install pytorch-lightning -c conda-forge
 | PyTorch Lightning Module         | Learn how to structure your deep learning models using LightningModules, separating model architecture from training logic. |
 | Trainer                          | Explore the Trainer class for efficient model training, providing features like distributed training and mixed precision. |
 | Metrics                          | Understand how to define, track, and evaluate training metrics to assess model performance effectively.       |
-| Data                             | Dive into data loading and preprocessing techniques in PyTorch Lightning, leveraging DataLoader and transforms for efficient data handling. |
+| Data Module                         | Dive into data loading and preprocessing techniques in PyTorch Lightning, leveraging DataLoader and transforms for efficient data handling. |
+| Code Structure                   | Restructuring single script to modular form: `dataset.py`, `model.py`, `config.py`, `train.py`. |
 | Callbacks                        | Discover the flexibility and extensibility of PyTorch Lightning through custom callbacks, enabling additional functionalities during training. |
 | TensorBoard                      | Learn how to visualize training metrics and model graphs using TensorBoard integration in PyTorch Lightning, facilitating deeper insights into model behavior. |
 | Profiler                         | Explore the built-in profiler in PyTorch Lightning for performance optimization, identifying bottlenecks and optimizing training pipelines. |
-| Multi-GPU Training               | Understand how to leverage multiple GPUs for accelerated training with PyTorch Lightning, scaling up training performance for large-scale models. |                                         |
+| Multi-GPU Training               | Understand how to leverage multiple GPUs for accelerated training with PyTorch Lightning, scaling up training performance for large-scale models. |     
 
+_Please note that the tutorial follows training on the MNIST dataset, starting from basic PyTorch implementation and gradually progressing through previous scripts, leading us deeper into implementation of PyTorch Lightning AI._
 
 ## Material Availability
 
 All the materials discussed in the repository are available for reference and practice. You can follow along with the provided code examples and experiment with your own datasets as well.
+
+---
+
+Happy coding! <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="30px" />
