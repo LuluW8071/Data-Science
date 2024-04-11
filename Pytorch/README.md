@@ -10,7 +10,8 @@ Welcome to the PyTorch Deep Learning repository! Here, you'll discover a curated
 - [03 - PyTorch Computer Vision](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/03_PyTorch_Computer_Vision)
 - [04 - PyTorch Custom Datasets](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/04_PyTorch_Custom_Datasets)
 - [05 - PyTorch Going Modular](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/05_PyTorch_Going_Modular/going_modular)
-
+- [06 - PyTorch Transfer Learning](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch/06_PyTorch_Transfer_Learning)
+ 
 ## About PyTorch
 
 PyTorch is an open-source machine learning library developed by Facebook's AI research lab. It provides a flexible and dynamic computational graph that makes it easy to build and train neural networks. PyTorch's key features include:
