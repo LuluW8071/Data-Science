@@ -36,5 +36,3 @@ def plot_loss_curves(results):
     plt.xlabel("Epochs")
     plt.legend()
 
-# Plot the loss curves of our model
-plot_loss_curves(results)
