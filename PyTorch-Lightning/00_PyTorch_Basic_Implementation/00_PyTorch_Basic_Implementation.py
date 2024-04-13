@@ -10,8 +10,6 @@ from torchmetrics import Accuracy
 from tqdm.auto import tqdm
 
 # Build a linear neuralnet
-
-
 class neuralnet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super().__init__()
