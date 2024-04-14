@@ -1,4 +1,5 @@
 import pytorch_lightning as pl
+
 from torchvision.datasets import ImageFolder
 from torchvision.transforms import transforms
 from torch.utils.data import DataLoader
@@ -21,7 +22,6 @@ class MNISTFoodDataModule(pl.LightningDataModule):
         data_transform = transforms.Compose([
             transforms.Resize((224, 224)),
             transforms.RandomHorizontalFlip(),  
-            transforms.TrivialAugmentWide(num_magnitude_bins=21),
             transforms.ToTensor()
         ])
 

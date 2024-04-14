@@ -1,16 +1,13 @@
 import torch
 from torch import nn 
-from torchvision.models import models
+from efficientnet_pytorch import EfficientNet
 import pytorch_lightning as pl 
 import torchmetrics
-
-import argparse
 
 class neuralnet(pl.LightningModule):
     def __init__(self, num_classes):
         super(neuralnet, self).__init__()
-        self.weights = models.efficientnet.b7(pretrained=True)          # Load pre-trained weights
-        self.model = models.efficientnet.EfficientNet.from_pretrained('efficientnet-b7')
+        self.model = EfficientNet.from_pretrained('efficientnet-b5')
 
         # Modify the classifier layer
         # Get the number of input features to the classifier
@@ -19,6 +16,8 @@ class neuralnet(pl.LightningModule):
                                              torch.nn.Linear(in_features=num_ftrs, 
                                                              out_features=num_classes, 
                                                              bias=True))
+        
+        # Setup Metrics
         self.loss_fn = nn.CrossEntropyLoss()
         self.accuracy = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes) 
         self.f1_score = torchmetrics.F1Score(task="multiclass", num_classes=num_classes) 
@@ -33,7 +32,7 @@ class neuralnet(pl.LightningModule):
         return loss, y_pred, y
     
     def training_step(self, batch, batch_idx):
-        loss, y_pred, y = self._common_step(batch, batch_idx)   # Call _common_step to get loss
+        loss, y_pred, y = self._common_step(batch, batch_idx)
         accuracy = self.accuracy(y_pred, y)  
         f1_score = self.f1_score(y_pred, y)
         self.log_dict({"loss": loss, 
@@ -44,7 +43,7 @@ class neuralnet(pl.LightningModule):
         return loss
     
     def validation_step(self, batch, batch_idx):
-        loss, y_pred, y = self._common_step(batch, batch_idx)  # Call _common_step to get loss
+        loss, y_pred, y = self._common_step(batch, batch_idx) 
         accuracy = self.accuracy(y_pred, y)  
         f1_score = self.f1_score(y_pred, y)
         self.log_dict({"loss": loss, 
@@ -55,7 +54,7 @@ class neuralnet(pl.LightningModule):
         return loss
     
     def test_step(self, batch, batch_idx):
-        loss, y_pred, y = self._common_step(batch, batch_idx)  # Call _common_step to get loss
+        loss, y_pred, y = self._common_step(batch, batch_idx)
         accuracy = self.accuracy(y_pred, y)  
         f1_score = self.f1_score(y_pred, y)
         self.log_dict({"loss": loss, 

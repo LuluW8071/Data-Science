@@ -3,7 +3,7 @@ import pytorch_lightning as pl
 
 from model import neuralnet
 from dataset import MNISTFoodDataModule
-import argparse as ArgumentParser
+import argparse
 
 def main(args):
     # Setting up device agnostic code
@@ -34,7 +34,7 @@ def main(args):
 
 
 if __name__  == "__main__":
-    parser = ArgumentParser(description="Train")
+    parser = argparse.ArgumentParser(description="Train")
 
     # Train Device Hyperparameters
     parser.add_argument('-g', '--gpus', default=1, type=int, help='number of gpus per node')
