@@ -1,6 +1,6 @@
 ## PyTorch Lightning CNN & Custom Data Implementation
 
-![EfficientNetB5 Architecture](../../assets/EfficientNetB5_Architecture.png)
+<img src="../../assets/EfficientNetB5_architecture.png">
 
 ### Installing Dependencies
 
