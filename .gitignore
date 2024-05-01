@@ -5,3 +5,6 @@ env/
 dataset/
 __pycache__
 datasets
+
+# Lightning
+lightning_logs/

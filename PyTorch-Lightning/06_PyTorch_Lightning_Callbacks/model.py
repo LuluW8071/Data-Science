@@ -42,7 +42,7 @@ class neuralnet(pl.LightningModule):
 
     def validation_step(self, batch, batch_idx):
         loss, y_pred, y = self._common_step(batch, batch_idx) 
-        self.log("val_loss", loss)
+        self.log("val_loss", loss, prog_bar=True)       # Log valdiation loss in prog bar
         return loss 
 
     def test_step(self, batch, batch_idx):
