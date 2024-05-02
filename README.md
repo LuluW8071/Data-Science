@@ -21,6 +21,7 @@ Welcome to the Data Science Repository! Here, you'll find a comprehensive collec
 |-----------------------------------------------|---------------------------------------------------------------------------------------------|
 |[Git](https://github.com/LuluW8071/Data-Science/tree/main/Git)                                  |Introduction to Git fundamentals |
 | [Python Basics & Advanced Concepts](https://github.com/LuluW8071/Data-Science/tree/main/Python/Notebooks)           | Covers Python fundamentals, OOP and advanced python topics                                 |
+| [Data Wrangling & EDA](https://github.com/LuluW8071/Data-Science/tree/main/Data%20Wrangling%20&%20EDA/)  | Preparation of data for analysis |
 | [Machine Learning Algorithms](https://github.com/LuluW8071/Data-Science/tree/main/Machine%20Learning)                  | Overview and implementation of popular ML algorithms with practical examples            |
 | [Deep Learning using PyTorch](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch)                 | Introduction to deep learning and hands-on tutorials for image analysis with PyTorch     |
 | [OpenCV](https://github.com/LuluW8071/Data-Science/tree/main/OpenCV)                                       | Introduction to computer vision and practical applications using OpenCV                  |
