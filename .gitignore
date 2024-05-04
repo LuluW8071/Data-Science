@@ -5,6 +5,7 @@ env/
 dataset/
 __pycache__
 datasets
+SDOT_Collisions_All_Years.csv
 
 # Lightning
 lightning_logs/
