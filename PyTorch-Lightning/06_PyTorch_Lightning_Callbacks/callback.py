@@ -5,14 +5,14 @@
 # NOTE: Reference link: https://lightning.ai/docs/pytorch/stable/extensions/callbacks.html
 
 # =======================================================
-""" EarlyStopping Callback""" 
+""" EarlyStopping Callback """ 
 # This callback can be used to monitor a metrci and stop the training when no improvement is observed.
 # Further more stopping threshold or divergence threshold can be added for 
 # stopping training immediately once the monitored quantity reaches certain threshold or
 # monitored quantity becomes worse than certain threshold
 # Reference Link: https://lightning.ai/docs/pytorch/stable/common/early_stopping.html#earlystopping-callback
 
-""" ModelCheckpoint Callback"""
+""" ModelCheckpoint Callback """
 # This callback saved the model checkpoints at every epoch by default.
 # Through this callback, last saved checkpoints can also be retireved and trained further upon.
 # Reference Link: https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.ModelCheckpoint.html#lightning.pytorch.callbacks.ModelCheckpoint
