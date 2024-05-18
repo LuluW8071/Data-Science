@@ -56,19 +56,16 @@ if __name__ == "__main__":
     trainer.validate(model, dataloader)
     trainer.test(model, dataloader)
 
-
-
 # DEMO RESULTS:
 # ======================================================================================
 
-# /usr/local/lib/python3.10/dist-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
-# Using 16bit Automatic Mixed Precision (AMP)
+# /home/codespace/.python/current/lib/python3.10/site-packages/lightning_fabric/connector.py:563: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+# /home/codespace/.python/current/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:556: You passed `Trainer(accelerator='cpu', precision='16-mixed')` but AMP with fp16 is not supported on CPU. Using `precision='bf16-mixed'` instead.
+# Using bfloat16 Automatic Mixed Precision (AMP)
 # GPU available: False, used: False
 # TPU available: False, using: 0 TPU cores
 # IPU available: False, using: 0 IPUs
 # HPU available: False, using: 0 HPUs
-# /home/codespace/.python/current/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:75: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
-# Missing logger folder: /workspaces/dev/lightning_logs
 
 #   | Name     | Type               | Params
 # ------------------------------------------------
@@ -84,19 +81,19 @@ if __name__ == "__main__":
 # 0         Non-trainable params
 # 118 K     Total params
 # 0.473     Total estimated model params size (MB)
-# Start train!                                                                                                                     
-# Epoch 2: 100%|████████████████████████████████████████████████████| 391/391 [00:17<00:00, 22.03it/s, v_num=0, loss=0.0428, accuracy=1.000, f1_score=1.000, val_loss=0.128]`Trainer.fit` stopped: `max_epochs=3` reached.                                                                                                                            
+# Start train!                                                                                                                                                                                   
+# Epoch 4: 100%|██████████████████████████████████████████████████████████████████████████| 391/391 [00:19<00:00, 20.26it/s, v_num=2, loss=0.374, accuracy=0.863, f1_score=0.863, val_loss=0.267]`Trainer.fit` stopped: `max_epochs=5` reached.                                                                                                                                                 
 # End train!
-# Epoch 2: 100%|████████████████████████████████████████████████████| 391/391 [00:17<00:00, 22.02it/s, v_num=0, loss=0.0428, accuracy=1.000, f1_score=1.000, val_loss=0.128]
-# Validation DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 79/79 [00:01<00:00, 48.27it/s]
-# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Epoch 4: 100%|██████████████████████████████████████████████████████████████████████████| 391/391 [00:19<00:00, 20.25it/s, v_num=2, loss=0.374, accuracy=0.863, f1_score=0.863, val_loss=0.267]
+# Validation DataLoader 0: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 79/79 [00:02<00:00, 38.54it/s]
+# ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 #      Validate metric           DataLoader 0
-# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-#         val_loss            0.09857720881700516
-# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-# Testing DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 79/79 [00:01<00:00, 47.90it/s]
-# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+#         val_loss            0.22596271336078644
+# ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 79/79 [00:01<00:00, 49.43it/s]
+# ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 #        Test metric             DataLoader 0
-# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-#         test_loss           0.11288387328386307
-# ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+#         test_loss           0.23988471925258636
+# ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
