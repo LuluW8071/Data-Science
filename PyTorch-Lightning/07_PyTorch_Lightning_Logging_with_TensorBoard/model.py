@@ -41,7 +41,7 @@ class neuralnet(pl.LightningModule):
                        logger=True)
 
         if batch_idx % 100 == 0:
-            x = x[:8]
+            x = x[:8]       # How many images to log on tensorboard image view
             grid = torchvision.utils.make_grid(x.view(-1, 1, 28, 28))
             self.logger.experiment.add_image("MNIST_images", grid, self.global_step)
         return loss

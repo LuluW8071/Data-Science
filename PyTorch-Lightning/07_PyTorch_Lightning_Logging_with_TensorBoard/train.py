@@ -37,7 +37,7 @@ if __name__ == "__main__":
     # Create a checkpoint callback
     # Save the model periodically by monitoring a quantity
     checkpoint_callback = ModelCheckpoint(monitor="val_loss",                    # Quantity to monitor | By default: None(saves last chekpoint)
-                                          dirpath="/saved_checkpoint/",           # Directory to save the model file.
+                                          dirpath="./saved_checkpoint/",         # Directory to save the model file.
                                           filename="MSNIT-model-{epoch:02d}-{val_loss:.2f}")   # Checkpoint filename
 
     # Create a Trainer instance with callbacks and logger
