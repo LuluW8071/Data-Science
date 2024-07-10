@@ -6,29 +6,19 @@ Welcome to the Data Science Repository! Here, you'll find a comprehensive collec
 
 ## Contents
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git" width="60" height="60"/> &nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> &nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="60" height="60"/> &nbsp;
-  <img src= "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="numpy" width="60" height="60"/> &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" width="60" height="60"/> &nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" width="70" height="60"/> &nbsp;
-  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="60" height="60"/> &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" alt="opencv" width="60" height="60"/> &nbsp;
+  <img src="https://go-skill-icons.vercel.app/api/icons?i=git,python,pandas,numpy,matplotlib,seaborn,sklearn,pytorch,lightning,open-cv" alt="Frameworks & Libraries" height="60"/> </br></br>
 </div>
-</br>
 
-| Topic                                         | Description                                                                                 |
-|-----------------------------------------------|---------------------------------------------------------------------------------------------|
-|[Git](https://github.com/LuluW8071/Data-Science/tree/main/Git)                                  |Introduction to Git fundamentals |
-| [Python Basics & Advanced Concepts](https://github.com/LuluW8071/Data-Science/tree/main/Python/Notebooks)           | Covers Python fundamentals, OOP and advanced python topics                                 |
-| [Data Wrangling & EDA](https://github.com/LuluW8071/Data-Science/tree/main/Data%20Wrangling%20&%20EDA/)  | Preparation of data for analysis |
-| [Machine Learning Algorithms](https://github.com/LuluW8071/Data-Science/tree/main/Machine%20Learning)                  | Overview and implementation of popular ML algorithms with practical examples            |
-| [Deep Learning using PyTorch](https://github.com/LuluW8071/Data-Science/tree/main/Pytorch)                 | Introduction to deep learning and hands-on tutorials for image analysis with PyTorch     |
-| [OpenCV](https://github.com/LuluW8071/Data-Science/tree/main/OpenCV)                                       | Introduction to computer vision and practical applications using OpenCV                  |
-
+| Topics                        | Description                                                                                 | Links |
+|-------------------------------|---------------------------------------------------------------------------------------------|-------|
+| **Git**                       | Introduction to Git fundamentals                                                             | [🔗](https://github.com/LuluW8071/Data-Science/tree/main/Git) |
+| **Python**                    | Covers Python fundamentals, OOP and advanced python topics                                   | [🔗](https://github.com/LuluW8071/Data-Science/tree/main/00_Python/Notebooks) |
+| **Data Wrangling & EDA**      | Preparation of data for analysis                                                             | [🔗](https://github.com/LuluW8071/Data-Science/tree/main/01_Data_Wrangling_and_EDA) |
+| **Machine Learning**          | Overview and implementation of popular ML algorithms with practical examples                 | [🔗](https://github.com/LuluW8071/Data-Science/tree/main/02_Machine_Learning) |
+| **Deep Learning in PyTorch**  | Introduction to deep learning and hands-on tutorials for image analysis with PyTorch         | [🔗](https://github.com/LuluW8071/Data-Science/tree/main/03_Deep_Learning_in_PyTorch) |
+| **OpenCV**                    | Introduction to computer vision and practical applications using OpenCV                      | [🔗](https://github.com/LuluW8071/Data-Science/tree/main/05_OpenCV) |
 
 **Exercises** are included between each topic to provide practice exercises and coding challenges for reinforcing learning and understanding.
-
 
 ## Usage
 Feel free to explore the repository and use the resources provided to enhance your understanding of **data science** concepts, machine learning, deep learning, and computer vision with OpenCV. 
