@@ -6,7 +6,7 @@ Welcome to the Data Science Repository! Here, you'll find a comprehensive collec
 
 ## Contents
 <div align="center">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=git,python,pandas,numpy,matplotlib,seaborn,sklearn,pytorch,lightning,open-cv" alt="Frameworks & Libraries" height="60"/> </br></br>
+  <img src="https://go-skill-icons.vercel.app/api/icons?i=git,python,pandas,numpy,matplotlib,seaborn,sklearn,pytorch,lightning,opencv" alt="Frameworks & Libraries" height="60"/> </br></br>
 </div>
 
 | Topics                        | Description                                                                                 | Links |
