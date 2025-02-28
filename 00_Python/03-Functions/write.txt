@@ -1,0 +1,1 @@
+This is a sample text file to showcase the write mode using open() function. Furthermore this is how you update by appending the contents of write.txt file
